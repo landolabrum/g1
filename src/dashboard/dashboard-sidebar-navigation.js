@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "./../logo.svg";
+// import logo from "./../logo.svg";
 import { createStyles, makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -34,13 +34,13 @@ const DashboardSidebarNavigation = () => {
         >
           <Toolbar style={{ width: "6rem", height: "auto" }}>
             <Link to="/" className={classes.logoWithLink}>
-              <img
+              {/* <img
                 className={"App-logo"}
                 width={"100%"}
                 height={"auto"}
                 src={logo}
                 alt="logo"
-              />
+              /> */}
               React
             </Link>
           </Toolbar>

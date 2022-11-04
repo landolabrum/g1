@@ -2,7 +2,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {ReactComponent as Logo} from "../../assets/images/logo.svg"
+import {ReactComponent as Logo} from "../../assets/images/brand/logo.svg"
 import Dropdown, {Navitem} from './navitems/navitems';
 
 export default function NavigationBar() {
@@ -23,6 +23,10 @@ export default function NavigationBar() {
             <Navitem 
               href="/about"
               label="about us"
+            />
+            <Navitem 
+              href="/products"
+              label="products"
             />
             {/* <Dropdown
               label="account"
