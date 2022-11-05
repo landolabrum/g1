@@ -6,10 +6,10 @@ import LandingPage from "./pages/LandingPage";
 import Inbox from "./dashboard/inbox";
 import SettingsAndPrivacy from "./dashboard/settings-and-privacy";
 import { Route, Routes } from "react-router";
-import { useRoutes } from "react-router-dom";
-import Details from "./pages/hierarchy/details";
-import List from "./pages/hierarchy/list";
+import Details from "./components/hierarchy/details";
+import List from "./components/hierarchy/list";
 import teamItems from "./models/team";
+import productItems from "./models/products";
 /*Routes is used to be Switch*/
 
 const Router = () => {
@@ -27,8 +27,9 @@ const Router = () => {
       } />
       <Route path="/products" element={
       <List 
-        title="our team"
-        items = {teamItems}
+        variant="product"
+        title="products & services"
+        items = {productItems}
       />
       } />
       <Route path="/details/:id" element={<Details />} />

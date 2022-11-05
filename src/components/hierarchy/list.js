@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Box, Button, Container, Paper, Typography } from "@material-ui/core";
 import { Col, Row } from "react-bootstrap";
 
-const List = ({ title, items }) => {
+const List = ({ title, items, variant }) => {
   // const [items, setItems] = useState([]);
   // const [loading, setLoading] = useState(false);
 
@@ -34,7 +34,7 @@ const List = ({ title, items }) => {
 
               <Box mb={3} key={item.id} >
                 <Paper key={item.id} className="bg-light" >
-                  <Box mx={2} py={2} className="d-flex flex-column align-items-start" minHeight="520px">
+                  <Box mx={2} py={2} className={`d-flex flex-column ${variant === 'product'?'align-items-center':'align-items-start'}`} minHeight={variant?'100%':"520px"}>
                     <Typography
                       variant="h5"
                       component="h2"
@@ -44,15 +44,15 @@ const List = ({ title, items }) => {
                       {item.title ? <p className='italic xs ms-2' >- {item.title}</p>:<p></p>}
                       </Typography>
 
-                    <img src={item.img} alt="..." class="list-image" />
+                    <img src={item.img} alt="..." class={`${variant?variant+'-list-image': "list-image"}`} />
 
                       <p className='xs text-secondary mt-4' >{item.details}</p>
-                      {/* <Button
+                    { variant &&  <Button
                         onClick={() => navigate("/details/" + item.id)}
                         color={"primary"}
                       >
                         See Details
-                      </Button> */}
+                      </Button>}
                   </Box>
                 </Paper>
               </Box>

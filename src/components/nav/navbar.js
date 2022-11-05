@@ -26,7 +26,7 @@ export default function NavigationBar() {
             />
             <Navitem 
               href="/products"
-              label="products"
+              label="products & services"
             />
             {/* <Dropdown
               label="account"
