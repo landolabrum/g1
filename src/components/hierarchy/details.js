@@ -3,7 +3,8 @@ import { useNavigate, useParams } from "react-router";
 import Button from "@material-ui/core/Button";
 import details from "../../models/details";
 import ReactPlayer from 'react-player'
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import UiModal from "../modal/modal";
 
 const Details = () => {
   const { id } = useParams();
@@ -20,23 +21,28 @@ const Details = () => {
         setItems(v.items)
       }
     })
-  }, [items, large])
+  }, [large])
 
   const handleLarge = (item) => {
-    console.log("it", item)
-    if (large.length) {
-      setLarge({})
+    if (item === undefined) {
+      setLarge({});
     } else {
-      setLarge(item)
+      setLarge(item);
     }
   }
 
-  return (<>
-    {large.type && <div className="detail-overlay">
-      <h1>{JSON.stringify(large)}</h1>
-      <img src={large.src} width="100%" />
-    </div>}
-    {JSON.stringify(large)}
+  return (<div >
+    <UiModal
+      show={large.type}
+      onClose={handleLarge}
+    >
+      <div className="large-container">
+        <div className="detail-image-large" >
+          <img width="100%" src={large.src}
+          />
+        </div>
+      </div>
+    </UiModal>
     <Button
       onClick={() => navigate(-1)}
       variant={"outlined"}
@@ -46,7 +52,7 @@ const Details = () => {
       Go back
     </Button>
     {logo &&
-      <div className="bg-lite mb-3 h-100 d-flex w-100 rounded">
+      <div className="mb-3 h-100 d-flex w-100 rounded border justify-content-center">
         <div>
           <img width="200px" src={logo} />
         </div>
@@ -62,22 +68,15 @@ const Details = () => {
           </Col>
         }
         return <>
-          {v.type === 'image' && <Col xs={12} md={6} lg={4} key={i}>
-            <a onClick={() => handleLarge(v)}>
+          {v.type === 'image' && <Col className="py-2 " xs={12} md={6} lg={4} key={i}>
+            <a className="detail-image" onClick={() => handleLarge(v)}>
               <img src={v.src} width="100%" />
             </a>
           </Col>}
         </>
-        // if (v.type === 'image') {
-        //   return <ColWrapper>
-        //   <a onClick={()=>handleLarge(v)}>
-        //     <img src={v.src} width="100%" />
-        //   </a>
-        //   </ColWrapper>
-        // }
       })}
     </Row>
-  </>
+  </div>
   );
 };
 
