@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-export default function UiModal({show, children, onClose, title, fullscreen}) {
+export default function UiModal({show, children, onClose}) {
   const [sh, setsh] = useState(false);
   useCallback(()=>{
     onClose()
@@ -25,20 +25,18 @@ export default function UiModal({show, children, onClose, title, fullscreen}) {
         {show && show.toString()}
       </Button> */}
 
-      <Modal  fullscreen={fullscreen} show={sh} onHide={handleClose} animation={false}>
-        <Modal.Header closeButton onClick={handleClose} className='modal-title bg-lite'>
-          <Modal.Title className='d-flex w-100'>
-            {title}
-            </Modal.Title>
-        </Modal.Header>
-        <Modal.Body  className='full-modal'>{children}</Modal.Body>
-        {/* <Modal.Footer className='bg-dark'>
+      <Modal fullscreen show={sh} onHide={handleClose} animation={false}>
+        {/* <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header> */}
+        <Modal.Body className='full-modal'>{children}</Modal.Body>
+        <Modal.Footer>
           <Container>
-        <Button variant="primary" onClick={handleClose} className="w-100 my-3">
-          Back 
+        <Button variant="primary" onClick={handleClose} className="w-100">
+          Back
         </Button>
         </Container>
-        </Modal.Footer> */}
+        </Modal.Footer>
       </Modal>
     </>
   );

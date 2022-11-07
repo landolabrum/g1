@@ -1,8 +1,7 @@
-import shield from '../assets/images/products/shield/my_shield_logo.png';
-import feva from '../assets/images/products/feva/Iveda_feva.png';
-import pin from '../assets/images/products/pin/pin_point_logo.png';
-import iveda from '../assets/images/products/iveda_ai/iveda_logo.png';
-import clearview from '../assets/images/products/clearview/clearview_logo.png';
+import shield from '../assets/images/products/my_shield_logo.png';
+import feva from '../assets/images/products/Iveda_feva.png';
+import pin from '../assets/images/products/pin_point_logo.png';
+import iveda from '../assets/images/products/iveda_logo.png';
 
 
 const productItems = [
@@ -21,10 +20,6 @@ const productItems = [
   {
     id: 'iveda',
     img: iveda,
-  },
-  {
-    id: 'clearview',
-    img: clearview,
   },
 
 ]
