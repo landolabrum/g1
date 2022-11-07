@@ -31,10 +31,9 @@ const List = ({ title, items, variant }) => {
       <Row>
         {items && items.map((item) => (
           <Col xs={12} md={6} lg={4} >
-
               <Box mb={3} key={item.id} >
                 <Paper key={item.id} className="bg-light" >
-                  <Box mx={2} py={2} className={`d-flex flex-column ${variant === 'product'?'align-items-center':'align-items-start'}`} minHeight={variant?'100%':"520px"}>
+                  <Box mx={2} py={2} className={`d-flex flex-column ${variant === 'product'?'align-items-center':'align-items-start'}`} minHeight={variant?'100%':"420px"}>
                     <Typography
                       variant="h5"
                       component="h2"
@@ -46,7 +45,7 @@ const List = ({ title, items, variant }) => {
 
                     <img src={item.img} alt="..." class={`${variant?variant+'-list-image': "list-image"}`} />
 
-                      <p className='xs text-secondary mt-4' >{item.details}</p>
+                      <p className='small text-secondary mt-4' >{item.details}</p>
                     { variant &&  <Button
                         onClick={() => navigate("/details/" + item.id)}
                         color={"primary"}

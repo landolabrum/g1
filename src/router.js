@@ -5,9 +5,9 @@ import NotFound from "./pages/NotFound";
 import LandingPage from "./pages/LandingPage";
 import Inbox from "./dashboard/inbox";
 import SettingsAndPrivacy from "./dashboard/settings-and-privacy";
-import { Route, Routes } from "react-router";
-import Details from "./components/hierarchy/details";
-import List from "./components/hierarchy/list";
+import { Routes, Route } from 'react-router-dom';
+import Details from "./components/hierarchy/detailsView";
+import List from "./components/hierarchy/listView";
 import teamItems from "./models/team";
 import productItems from "./models/products";
 /*Routes is used to be Switch*/
@@ -17,7 +17,6 @@ const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      {/* <Route path="/list" element={<List />} /> */}
       {/* <Route path="/details/:id" element={<Details />} /> */}
       <Route path="/about" element={
       <List 

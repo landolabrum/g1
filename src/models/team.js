@@ -47,7 +47,7 @@ const teamItems = [
     name: 'dan de la cruz',
     title: 'President of KLS',
     img: dan,
-    details: 'With 30 years in experience in protection services, Dan is a Certified Contractor for Advantor Systems with DOD Security. He also is a Level 2 and Level 3 Master Trainer in Compliant Technologies.'
+    details:"Mr. De La Cruz is the founder and president of KLS INSTALLATIONS Inc. a private contractor for the Department of Defense. Installing and managing security installations on military bases across the nation. 30 years experience in security to include physical, Intrusion detection, CCTV and access control. He also works closely with Law Enforcement agencies nationwide as a certified master trainer for defensive tactics training."
   },
 ]
 export default teamItems

@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router";
 import Button from "@material-ui/core/Button";
 import details from "../../models/details";
 import ReactPlayer from 'react-player'
+import LazyPlayer from 'react-player/lazy'
+
 import { Col, Container, Row } from "react-bootstrap";
 import UiModal from "../modal/modal";
 
@@ -33,6 +35,8 @@ const Details = () => {
 
   return (<div >
     <UiModal
+      fullscreen={true}
+      title={<img width="120px" src={logo} />}
       show={large.type}
       onClose={handleLarge}
     >
@@ -53,7 +57,7 @@ const Details = () => {
     </Button>
     {logo &&
       <div className="mb-3 h-100 d-flex w-100 rounded border justify-content-center">
-        <div>
+        <div className="my-3">
           <img width="200px" src={logo} />
         </div>
       </div>
@@ -62,9 +66,18 @@ const Details = () => {
       {items.map((v, i) => {
         if (v.type === 'yt' && v.src) {
           return <Col xs={12} key={i}>
-            <div className="d-flex w-100 h-auto mx-0 px-0">
+
+            <div className="d-flex w-100 h-100 mx-0 px-0 my-2">
               <ReactPlayer width="100%" url={v.src} />
             </div>
+          </Col>
+        }
+        if (v.type === 'video' && v.src) {
+          return <Col xs={12} key={i}>
+            <div className="d-flex justify-content-center w-100 h-auto mx-0 px-0">
+              <LazyPlayer controls url={v.src} height="auto" width />
+            </div>
+            {v.title && <h4 className="mb-3">{v.title}</h4>}
           </Col>
         }
         return <>
