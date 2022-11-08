@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.fe5ee2e0.chunk.css",
-    "main.js": "/static/js/main.a1cca7c5.chunk.js",
-    "main.js.map": "/static/js/main.a1cca7c5.chunk.js.map",
+    "main.js": "/static/js/main.3be0e152.chunk.js",
+    "main.js.map": "/static/js/main.3be0e152.chunk.js.map",
     "reactPlayerDailyMotion.js": "/static/js/reactPlayerDailyMotion.5e495d75.chunk.js",
     "reactPlayerDailyMotion.js.map": "/static/js/reactPlayerDailyMotion.5e495d75.chunk.js.map",
     "reactPlayerFacebook.js": "/static/js/reactPlayerFacebook.3d66c85e.chunk.js",
@@ -32,12 +32,12 @@
     "runtime-main.js": "/static/js/runtime-main.8e8a517b.js",
     "runtime-main.js.map": "/static/js/runtime-main.8e8a517b.js.map",
     "static/css/15.42d51ddf.chunk.css": "/static/css/15.42d51ddf.chunk.css",
-    "static/js/15.f41d58f4.chunk.js": "/static/js/15.f41d58f4.chunk.js",
-    "static/js/15.f41d58f4.chunk.js.map": "/static/js/15.f41d58f4.chunk.js.map",
+    "static/js/15.ac8f2bf2.chunk.js": "/static/js/15.ac8f2bf2.chunk.js",
+    "static/js/15.ac8f2bf2.chunk.js.map": "/static/js/15.ac8f2bf2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/15.42d51ddf.chunk.css.map": "/static/css/15.42d51ddf.chunk.css.map",
     "static/css/main.fe5ee2e0.chunk.css.map": "/static/css/main.fe5ee2e0.chunk.css.map",
-    "static/js/15.f41d58f4.chunk.js.LICENSE.txt": "/static/js/15.f41d58f4.chunk.js.LICENSE.txt",
+    "static/js/15.ac8f2bf2.chunk.js.LICENSE.txt": "/static/js/15.ac8f2bf2.chunk.js.LICENSE.txt",
     "static/media/1.01cc7a53.png": "/static/media/1.01cc7a53.png",
     "static/media/1.47163d9f.png": "/static/media/1.47163d9f.png",
     "static/media/1.efc0c0ff.png": "/static/media/1.efc0c0ff.png",
@@ -88,8 +88,8 @@
   "entrypoints": [
     "static/js/runtime-main.8e8a517b.js",
     "static/css/15.42d51ddf.chunk.css",
-    "static/js/15.f41d58f4.chunk.js",
+    "static/js/15.ac8f2bf2.chunk.js",
     "static/css/main.fe5ee2e0.chunk.css",
-    "static/js/main.a1cca7c5.chunk.js"
+    "static/js/main.3be0e152.chunk.js"
   ]
 }
