@@ -21,6 +21,10 @@ export default function NavigationBar() {
    
           <Nav className='d-flex w-100 justify-content-end'>
             <Navitem 
+              href="/"
+              label="home"
+            />
+            <Navitem 
               href="/about"
               label="about us"
             />
