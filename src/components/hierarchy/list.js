@@ -34,7 +34,7 @@ const List = ({ title, items, variant }) => {
 
               <Box mb={3} key={item.id} >
                 <Paper key={item.id} className="bg-light" >
-                  <Box mx={2} py={2} className={`d-flex flex-column ${variant === 'product'?'align-items-center':'align-items-start'}`} minHeight={variant?'100%':"520px"}>
+                  <Box mx={2} py={2} className={`d-flex flex-column justify-content-around ${variant === 'product'?'align-items-center':'align-items-start'}`} minHeight={"370px"}>
                     <Typography
                       variant="h5"
                       component="h2"

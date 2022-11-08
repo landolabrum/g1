@@ -1,8 +1,5 @@
-fill whole gray space for govener homepage
-dan
-  cto
-  after larry
-  pic square
+
+
 
 
 clearview
@@ -21,3 +18,8 @@ z cameras
 
 DONE:
   add Home nav
+  dan
+    cto
+    after larry
+    pic square
+  fill whole gray space for govener homepage

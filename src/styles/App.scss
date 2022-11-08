@@ -7,6 +7,9 @@ $lite:#bdbdbd;
   font-size: $xs !important;
   line-height: $xs;
 }
+.rounded-left{
+  border-radius: 4px 0 0 4px !important;
+}
 .sm{
   font-size: $small !important;
   line-height: $small;
@@ -77,9 +80,9 @@ $lite:#bdbdbd;
   border-radius: 4px;
 }
 .product-list-image{
-  height: inherit;
-  max-height: 180px;
-  width: auto;
+  height: auto;
+  // max-height: 180px;
+  width: 70%;
   border-radius: 4px;
 }
 // LISTS

@@ -14,6 +14,13 @@ const teamItems = [
     details: 'Mr. Kohler is the founder and President of Guardian One LLC which was created for the purpose of providing the latest developments of security and safety technologies for use by schools, churches, hospitals and businesses.'
   },
   {
+    id: 'dan',
+    name: 'dan de la cruz',
+    title: 'Chief Technical Officer',
+    img: dan,
+    details: 'With 30 years in experience in protection services, Dan is a Certified Contractor for Advantor Systems with DOD Security. He also is a Level 2 and Level 3 Master Trainer in Compliant Technologies.'
+  },
+  {
     id: 'tim',
     name: 'Tim Creviston',
     title: 'Chief Operating Officer',
@@ -40,14 +47,6 @@ const teamItems = [
     title: 'President of ABEC',
     img: dick,
     details: 'President of Arizona Business and Education Coalition. Dick Foreman brings to ABEC unprecedented knowledge, expertise and credibility that he has built during his much accomplished 37-year career in public affairs and in developing public policy. He also brings to ABEC a wide array of experiences while serving on business, education, and community governing and advisory boards throughout his career. His passion, however, is and always has been public education.'
-  },
-
-  {
-    id: 'dan',
-    name: 'dan de la cruz',
-    title: 'President of KLS',
-    img: dan,
-    details: 'With 30 years in experience in protection services, Dan is a Certified Contractor for Advantor Systems with DOD Security. He also is a Level 2 and Level 3 Master Trainer in Compliant Technologies.'
-  },
+  }
 ]
 export default teamItems
