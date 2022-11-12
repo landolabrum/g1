@@ -5,7 +5,7 @@ export default function Slider({ items, variant, duration }) {
   const [time, setTime] = useState(0)
   let dur = duration
   if (!dur) {
-    dur = 2
+    dur = 8
   }
   const handleTime = () => {
     if (time >= items.length - 1) {
