@@ -36,8 +36,12 @@ import a4 from "../assets/images/products/iveda_ai/4.png";
 import a5 from "../assets/images/products/iveda_ai/5.png";
 
 import cL from "../assets/images/products/clearview/clearview_logo.png"
-
 import c1 from "../assets/images/products/clearview/smart_tower.webm"
+import c2 from "../assets/images/products/clearview/cg1.webp"
+// src/assets/images/products/clearview/cg1.webp
+
+import vl from "../assets/images/products/vemo/vl.png"
+import v1 from "../assets/images/products/vemo/v1.jpeg"
 
 const details = [
   {
@@ -102,6 +106,21 @@ const details = [
     logo: cL,
     items: [
       { title: 'Smart Tower', type: 'video', src: c1 },
+      { 
+        title: 'G.L.O.V.E',
+        type: 'dual',
+        subtitle: 'Generated Low Output Voltage Emitter',
+        body: "The G.L.O.V.E. quickly transforms into a Conducted Electrical Weapon (CEW) used within the Force Continuum to supplement existing tools within Law Enforcement, Corrections, Security, EMS and the Military. It is available through most of the Force Continuum and like an “invisible partner” enhances the user’s ability when operating within the Continuum while utilizing their agencies already established Tactics Techniques and Procedures whether on their own or in mass. This is why we call the G.L.O.V.E. the “Force Multiplier” and how it operates within the Force Continuum as “The New Protocol in Peace Keeping.”",
+        src: c2,
+       },
+    ]
+  },
+  {
+    id: "vemo",
+    logo: vl,
+    items: [
+      { title: 'vemo body cam', type: 'image', src: v1 },
+
     ]
   },
 ]

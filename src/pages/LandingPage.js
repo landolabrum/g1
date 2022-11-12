@@ -4,8 +4,6 @@ import s1 from "../assets/images/backgrounds/banner_1.png"
 import s2 from "../assets/images/backgrounds/banner_2.png"
 import s3 from "../assets/images/backgrounds/banner_3.png"
 import tom from '../assets/images/slider_tom_ridge.png';
-
-import { Card, Col, Row } from "react-bootstrap";
 const TrSlide = () => {
   return <div className="d-flex border w-100 rounded bg-white mt-3 shadow">
     <div className="d-flex">
@@ -17,7 +15,6 @@ const TrSlide = () => {
       </div>
     </div>
   </div>
-
 }
 const slideItems = [
   {id: 1, img:s1, title:'Detection', body: 'Guardian One employs video and AI technology to provide immediate detection'},

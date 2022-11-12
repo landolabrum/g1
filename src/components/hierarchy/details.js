@@ -80,6 +80,24 @@ const Details = () => {
             {v.title && <h4 className="mb-3">{v.title}</h4>}
           </Col>
         }
+        if (v.type === 'dual' && v.src) {
+          return <div key={i}>
+            <Row>
+            <Col xs={12} md={6}>
+              <div className="d-flex flex-column align-items-center justify-content-center h-100">
+            {v.title && <h3 className="mb-3 display-5">{v.title}</h3>}
+            {v.subtitle && <h4 className="mb-3">{v.subtitle}</h4>}
+            {v.body && <p className="reg mb-3">{v.body}</p>}
+            </div>
+            </Col>
+            <Col xs={12} md={6}>
+              <Container>
+                  <img src={v.src} className="img-fluid" />
+              </Container>
+            </Col>
+            </Row>
+          </div>
+        }
         return <>
           {v.type === 'image' && <Col className="py-2 " xs={12} md={6} lg={4} key={i}>
             <a className="detail-image" onClick={() => handleLarge(v)}>
