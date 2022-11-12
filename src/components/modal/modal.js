@@ -29,14 +29,14 @@ export default function UiModal({show, children, onClose}) {
         {/* <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header> */}
-        <Modal.Body className='full-modal'>{children}</Modal.Body>
-        <Modal.Footer>
+        <Modal.Header>
           <Container>
-        <Button variant="primary" onClick={handleClose} className="w-100">
+        <Button variant="secondary" onClick={handleClose} className="w-100">
           Back
         </Button>
         </Container>
-        </Modal.Footer>
+        </Modal.Header>
+        <Modal.Body className='full-modal'>{children}</Modal.Body>
       </Modal>
     </>
   );

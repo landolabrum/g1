@@ -1,5 +1,4 @@
 clearview
-  tower going up video
   Compliant technologies glove ( get Logo )
 
 ai
@@ -21,7 +20,7 @@ DONE:
     cto
     after larry
     pic square
-  fill whole gray space for govener homepage
+  fill whole gray space for govenor homepage
   ai
     take image with three col out
   clearview

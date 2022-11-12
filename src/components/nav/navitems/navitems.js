@@ -2,7 +2,7 @@ import { Nav } from 'react-bootstrap';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
 
-export const Navitem = ({ label, href, onClick, as }) => {
+export const Navitem = ({ label, href, onClick, as, height, width }) => {
   const navigate = useNavigate()
   const handleClick = () => {
     if (href) {
@@ -16,9 +16,13 @@ export const Navitem = ({ label, href, onClick, as }) => {
     }
   }
   if (as === 'dropdown') {
-    return <NavDropdown.Item className='text-capitalize' onClick={handleClick}>{label}</NavDropdown.Item>
+    return <NavDropdown.Item className='text-capitalize' onClick={handleClick}>
+    {label}
+      </NavDropdown.Item>
   }
-  return <Nav.Link className='text-capitalize' onClick={handleClick}>{label}</Nav.Link>
+  return <Nav.Link className='text-capitalize' style={{height: height, width: width}} onClick={handleClick}>
+    <h4 className="px-3">{label}</h4>
+  </Nav.Link>
 }
 
 const Dropdown = ({ label, items }) => {

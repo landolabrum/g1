@@ -8,11 +8,11 @@ import {Navitem} from './navitems/navitems';
 export default function NavigationBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container >
+      <Container fluid>
       <Navbar.Brand href="#home">
       <Navitem 
               href="/"
-              label={<Logo/>}
+              label={<Logo width="290px"/>}
             />
       </Navbar.Brand>
 

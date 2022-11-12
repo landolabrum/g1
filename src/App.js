@@ -11,10 +11,12 @@ import Container from "@material-ui/core/Container";
 function App() {
   return (
     <HashRouter>
+      {/* <main className="bg-lite"> */}
       <NavigationBar />
       <Container className="mt-3">
         <Router />
       </Container>
+      {/* </main> */}
     </HashRouter>
   );
 }
