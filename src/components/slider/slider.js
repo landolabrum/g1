@@ -31,7 +31,7 @@ export default function Slider({ items, variant, duration }) {
       // onMouseEnter={handleStop} onMouseLeave={handleStop}
       >
         <Col className="slide-info" sm={12} md={10} lg={8}>
-          <div className="d-flex justify-content-end h-100 w-100 flex-column">
+          <div className="d-flex justify-content-end h-100 w-100 flex-column mx-2">
             <div className="slide-header">
               {/* {stop.toString()} */}
               <div className="slide-title">{item.title}</div>

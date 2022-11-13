@@ -120,7 +120,6 @@ const details = [
     logo: vl,
     items: [
       { title: 'vemo body cam', type: 'image', src: v1 },
-
     ]
   },
 ]
