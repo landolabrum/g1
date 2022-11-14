@@ -39,7 +39,7 @@ const productItems = [
   {
     id: 'vemo',
     img: vemo,
-    details:"Body Cam"
+    details:"Body Cameras"
   },
   {
     id: 'compliant',
