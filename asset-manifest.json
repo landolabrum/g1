@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e89bbb81.chunk.css",
-    "main.js": "/static/js/main.44884612.chunk.js",
-    "main.js.map": "/static/js/main.44884612.chunk.js.map",
+    "main.js": "/static/js/main.0593b563.chunk.js",
+    "main.js.map": "/static/js/main.0593b563.chunk.js.map",
     "reactPlayerDailyMotion.js": "/static/js/reactPlayerDailyMotion.78ad641c.chunk.js",
     "reactPlayerDailyMotion.js.map": "/static/js/reactPlayerDailyMotion.78ad641c.chunk.js.map",
     "reactPlayerFacebook.js": "/static/js/reactPlayerFacebook.758ce48c.chunk.js",
@@ -67,7 +67,7 @@
     "static/media/7.92d88fb9.png": "/static/media/7.92d88fb9.png",
     "static/media/8.944fee05.png": "/static/media/8.944fee05.png",
     "static/media/9.9db73b53.png": "/static/media/9.9db73b53.png",
-    "static/media/Iveda_feva.16c5a1a1.png": "/static/media/Iveda_feva.16c5a1a1.png",
+    "static/media/Iveda_feva.4847b016.png": "/static/media/Iveda_feva.4847b016.png",
     "static/media/aL.92500c42.png": "/static/media/aL.92500c42.png",
     "static/media/ac1.3f2c7daf.png": "/static/media/ac1.3f2c7daf.png",
     "static/media/ac2.e692d414.png": "/static/media/ac2.e692d414.png",
@@ -77,34 +77,34 @@
     "static/media/c1.aedd5ac4.webp": "/static/media/c1.aedd5ac4.webp",
     "static/media/cg1.2e9d92fd.webp": "/static/media/cg1.2e9d92fd.webp",
     "static/media/clearview_logo.28b5a81b.png": "/static/media/clearview_logo.28b5a81b.png",
-    "static/media/compL.934dae68.webp": "/static/media/compL.934dae68.webp",
+    "static/media/compL.f7206f56.png": "/static/media/compL.f7206f56.png",
     "static/media/dan_cruz.2b2b0d01.png": "/static/media/dan_cruz.2b2b0d01.png",
     "static/media/dick_foreman.4a956a49.png": "/static/media/dick_foreman.4a956a49.png",
     "static/media/epa1.94a2a42c.png": "/static/media/epa1.94a2a42c.png",
     "static/media/epa2.ea7ce2c0.png": "/static/media/epa2.ea7ce2c0.png",
-    "static/media/iveda_logo.7fb292c1.png": "/static/media/iveda_logo.7fb292c1.png",
+    "static/media/iveda_logo.d08d3989.png": "/static/media/iveda_logo.d08d3989.png",
     "static/media/larry_kohler.06b736c9.png": "/static/media/larry_kohler.06b736c9.png",
     "static/media/logo.32929f51.svg": "/static/media/logo.32929f51.svg",
-    "static/media/my_shield_logo.46e6cec0.png": "/static/media/my_shield_logo.46e6cec0.png",
-    "static/media/pin_point_logo.c4c28e5a.png": "/static/media/pin_point_logo.c4c28e5a.png",
+    "static/media/my_shield_logo.400d076a.png": "/static/media/my_shield_logo.400d076a.png",
+    "static/media/pin_point_logo.1a276ae2.png": "/static/media/pin_point_logo.1a276ae2.png",
     "static/media/slider_tom_ridge.c4c55011.png": "/static/media/slider_tom_ridge.c4c55011.png",
     "static/media/smart_tower.5b1bad2a.webm": "/static/media/smart_tower.5b1bad2a.webm",
     "static/media/steve_kohler.edd98b54.png": "/static/media/steve_kohler.edd98b54.png",
     "static/media/tim_creviston.41610205.png": "/static/media/tim_creviston.41610205.png",
     "static/media/v1.4ecb4976.jpeg": "/static/media/v1.4ecb4976.jpeg",
     "static/media/v2.89a370e0.png": "/static/media/v2.89a370e0.png",
-    "static/media/vl.54bede6b.png": "/static/media/vl.54bede6b.png",
+    "static/media/vl.ac45ad86.png": "/static/media/vl.ac45ad86.png",
     "static/media/wayne_porter.95773996.png": "/static/media/wayne_porter.95773996.png",
     "static/media/weapon_detection.4a018ccc.mp4": "/static/media/weapon_detection.4a018ccc.mp4",
     "static/media/z1.e8328a61.png": "/static/media/z1.e8328a61.png",
     "static/media/z2.41350114.png": "/static/media/z2.41350114.png",
-    "static/media/zL.6a01d77b.png": "/static/media/zL.6a01d77b.png"
+    "static/media/zL.4f105597.png": "/static/media/zL.4f105597.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c3a7f59a.js",
     "static/css/15.42d51ddf.chunk.css",
     "static/js/15.4bd33af7.chunk.js",
     "static/css/main.e89bbb81.chunk.css",
-    "static/js/main.44884612.chunk.js"
+    "static/js/main.0593b563.chunk.js"
   ]
 }
