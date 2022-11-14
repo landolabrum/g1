@@ -4,6 +4,8 @@ import s2 from "../assets/images/products/shield/2.png";
 import s3 from "../assets/images/products/shield/3.png";
 import s4 from "../assets/images/products/shield/4.png";
 import s5 from "../assets/images/products/shield/5.png";
+import epa1 from "../assets/images/products/shield/epa1.png";
+import epa2 from "../assets/images/products/shield/epa2.png";
 
 import pL from "../assets/images/products/pin/pin_point_logo.png";
 import p1 from "../assets/images/products/pin/1.png";
@@ -34,6 +36,7 @@ import a2 from "../assets/images/products/iveda_ai/2.png";
 import a3 from "../assets/images/products/iveda_ai/3.png";
 import a4 from "../assets/images/products/iveda_ai/4.png";
 import a5 from "../assets/images/products/iveda_ai/5.png";
+import a6 from "../assets/images/products/iveda_ai/weapon_detection.mp4";
 
 import cL from "../assets/images/products/clearview/clearview_logo.png"
 import c1 from "../assets/images/products/clearview/smart_tower.webm"
@@ -42,6 +45,41 @@ import c2 from "../assets/images/products/clearview/cg1.webp"
 
 import vl from "../assets/images/products/vemo/vl.png"
 import v1 from "../assets/images/products/vemo/v1.jpeg"
+import v2 from "../assets/images/products/vemo/v2.png"
+
+import cOL from "../assets/images/products/compliant/compL.webp"
+import cO1 from "../assets/images/products/compliant/c1.webp"
+
+import zL from "../assets/images/products/zee/zL.png"
+import z1 from "../assets/images/products/zee/z1.png"
+import z2 from "../assets/images/products/zee/z2.png"
+
+import acL from "../assets/images/products/active/aL.png"
+import ac1 from "../assets/images/products/active/ac1.png"
+import ac2 from "../assets/images/products/active/ac2.png"
+
+const EBand = () =>{
+  return <ul>
+  <li>Color: Black </li>
+  <li>Material: calf or goat skin, neoprene and polyester fiber</li>
+  <li>Two models to choose from: Arm or Leg</li>
+  <li>Charge time: 4 hours</li>
+  <li>Stand-by time: 24 hours</li>
+  <li>Continuous working time: 2 hours</li>
+  <li>Snap-type locking mechanism</li>
+  <li>Magnetically operated</li>
+  <li>Remotely controlled (300 meters)</li>
+  <li>3.7 Volt Lithium Ion Battery</li>
+  <li>Maximum Voltage: 210-320V (cannot go above 380V)</li>
+  <li>Maximum Current: 0.9-1.5A</li>
+  <li>Pulse Duration (μS): 105-115 (.000115 second)</li>
+  <li>Pulse Charge (μC) 84-125 (.000125 Amp-Second)</li>
+  <li>Pulse repetition rate (pps): 29.7 - 30.8</li>
+  <li>Duty Cycle (%): 0.32 - 0.35</li>
+  <li>Operating Temperature: 14°F to 122°F (-10°c to 50°c)</li>
+  </ul>
+}
+
 
 const details = [
   {
@@ -57,6 +95,8 @@ const details = [
       { type: 'image', src: s3 },
       { type: 'image', src: s4 },
       { type: 'image', src: s5 },
+      { type: 'image', src: epa1 },
+      { type: 'image', src: epa2 },
     ]
   },
   {
@@ -99,6 +139,8 @@ const details = [
       // { type: 'image', src: a3 },
       { type: 'image', src: a4 },
       { type: 'image', src: a5 },
+      { title: 'Weapon Detection', type: 'video', src: a6 },
+
     ]
   },
   {
@@ -106,13 +148,6 @@ const details = [
     logo: cL,
     items: [
       { title: 'Smart Tower', type: 'video', src: c1 },
-      { 
-        title: 'G.L.O.V.E',
-        type: 'dual',
-        subtitle: 'Generated Low Output Voltage Emitter',
-        body: "The G.L.O.V.E. quickly transforms into a Conducted Electrical Weapon (CEW) used within the Force Continuum to supplement existing tools within Law Enforcement, Corrections, Security, EMS and the Military. It is available through most of the Force Continuum and like an “invisible partner” enhances the user’s ability when operating within the Continuum while utilizing their agencies already established Tactics Techniques and Procedures whether on their own or in mass. This is why we call the G.L.O.V.E. the “Force Multiplier” and how it operates within the Force Continuum as “The New Protocol in Peace Keeping.”",
-        src: c2,
-       },
     ]
   },
   {
@@ -120,6 +155,41 @@ const details = [
     logo: vl,
     items: [
       { title: 'vemo body cam', type: 'image', src: v1 },
+      { title: 'vemo body cam', type: 'image', src: v2 },
+    ]
+  },
+  {
+    id: "compliant",
+    logo: cOL,
+    items: [
+      { 
+        title: 'G.L.O.V.E',
+        type: 'dual',
+        subtitle: 'Generated Low Output Voltage Emitter',
+        body: "The G.L.O.V.E. quickly transforms into a Conducted Electrical Weapon (CEW) used within the Force Continuum to supplement existing tools within Law Enforcement, Corrections, Security, EMS and the Military. It is available through most of the Force Continuum and like an “invisible partner” enhances the user’s ability when operating within the Continuum while utilizing their agencies already established Tactics Techniques and Procedures whether on their own or in mass. This is why we call the G.L.O.V.E. the “Force Multiplier” and how it operates within the Force Continuum as “The New Protocol in Peace Keeping.”",
+        src: c2,
+       },
+      { 
+        title: 'E-BAND',
+        type: 'dual',
+        body: <EBand/>,
+        src: cO1,
+       },
+    ]
+  },
+  {
+    id: "zee",
+    logo: zL,
+    items: [
+      { title: 'vemo body cam', type: 'image', src: z1 },
+    ]
+  },
+  {
+    id: "active",
+    logo: acL,
+    items: [
+      { title: '', type: 'image', src: ac1 },
+      { title: '', type: 'image', src: ac2 },
     ]
   },
 ]

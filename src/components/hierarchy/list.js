@@ -38,17 +38,18 @@ const List = ({ title, items, variant }) => {
                 <Paper key={item.id} className="product-container" onClick={() => navigate("/details/" + item.id)}>
                   <div className="product-image-container">
                     <img src={item.img} alt="..." class={`${variant ? variant + '-list-image' : "list-image"}`} />
+                  <p className="fw-600 italic text-capitalize pb-4 mb-4">{item.details}</p>
                   </div>
                   <div
                   className="w-100 h-100 text-center pb-4 product-button-container"
                   // className="product-button-container"
                   >
-                    <Button
+                    {/* <Button
                       size="large"
                       variant='flat'
                     >
                       See Details
-                    </Button>
+                    </Button> */}
                   </div>
                 </Paper>
               </>}

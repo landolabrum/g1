@@ -28,7 +28,14 @@ const Router = () => {
       <Route path="/products" element={
       <List 
         variant="product"
-        title="products & services"
+        title={<div className='d-flex flex-column gap2'>
+        <div className='display-5 fw-700'>
+        products & services
+        </div>
+        <div className='large italic fw-400 mb-4'>
+          Brands
+        </div>
+      </div>}
         items = {productItems}
       />
       } />

@@ -81,19 +81,25 @@ const Details = () => {
           </Col>
         }
         if (v.type === 'dual' && v.src) {
-          return <div key={i}>
-            <Row>
-            <Col xs={12} md={6}>
-              <div className="d-flex flex-column align-items-center justify-content-center h-100">
+          const Txt = () =>{
+            return        <div className="mx-4 px-4 d-flex flex-column align-items-center justify-content-center h-100">
             {v.title && <h3 className="mb-3 display-5">{v.title}</h3>}
             {v.subtitle && <h4 className="mb-3">{v.subtitle}</h4>}
             {v.body && <p className="reg mb-3">{v.body}</p>}
             </div>
+          }
+          const Img = () =>{
+            return <Container>
+            <img src={v.src} className="img-fluid" />
+        </Container>
+          }
+          return <div key={i} className="my-4 py-3">
+            <Row className="d-flex align-items-center">
+            <Col xs={12} md={6} >
+              {i/2?<Txt/>:<Img/>}
             </Col>
             <Col xs={12} md={6}>
-              <Container>
-                  <img src={v.src} className="img-fluid" />
-              </Container>
+             {!i/2?<Txt/>:<Img/>}
             </Col>
             </Row>
           </div>
