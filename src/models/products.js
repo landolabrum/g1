@@ -4,7 +4,7 @@ import pin from '../assets/images/products/pin/pin_point_logo.png';
 import iveda from '../assets/images/products/iveda_ai/iveda_logo.png';
 import clearview from '../assets/images/products/clearview/clearview_logo.png';
 import vemo from '../assets/images/products/vemo/vl.png';
-import cOL from "../assets/images/products/compliant/compL.webp"
+import cOL from "../assets/images/products/compliant/compL.png"
 import zL from "../assets/images/products/zee/zL.png"
 import acL from "../assets/images/products/active/aL.png"
 
@@ -44,12 +44,12 @@ const productItems = [
   {
     id: 'compliant',
     img: cOL,
-    details:""
+    details:"Police Security Technology"
   },
   {
     id: 'zee',
     img: zL,
-    details:"Police Security Tecnology"
+    details:"Surveillance Cameras"
   },
   {
     id: 'active',

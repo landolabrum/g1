@@ -47,7 +47,7 @@ import vl from "../assets/images/products/vemo/vl.png"
 import v1 from "../assets/images/products/vemo/v1.jpeg"
 import v2 from "../assets/images/products/vemo/v2.png"
 
-import cOL from "../assets/images/products/compliant/compL.webp"
+import cOL from "../assets/images/products/compliant/compL.png"
 import cO1 from "../assets/images/products/compliant/c1.webp"
 
 import zL from "../assets/images/products/zee/zL.png"
