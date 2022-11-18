@@ -38,7 +38,7 @@ const List = ({ title, items, variant }) => {
                 <Paper key={item.id} className="product-container" onClick={() => navigate("/details/" + item.id)}>
                   <div className="product-image-container">
                     <img src={item.img} alt="..." class={`${variant ? variant + '-list-image' : "list-image"}`} />
-                  <h5 className="fw-600 italic text-capitalize pb-4 mb-4 mx-4 text-center">{item.details}</h5>
+                  <h4 className="fw-600 text-primary italic text-capitalize pb-4 mb-4 mx-4 text-center">{item.details}</h4>
                   </div>
                 </Paper>
               </>}
@@ -53,7 +53,7 @@ const List = ({ title, items, variant }) => {
                     {item.title ? <p className='italic xs ms-2' >- {item.title}</p> : <p></p>}
                   </Typography>
 
-                  <img src={item.img} alt="..." class={`${variant ? variant + '-list-image' : "rounded w-100 img-fluid"}`} />
+                  <img src={item.img} alt="..." class={`${variant ? variant + '-list-image' : "rounded w-50 img-fluid"}`} />
 
                   <p className='reg text-secondary mt-4' >{item.details}</p>
                   {
